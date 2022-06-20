@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+
+  display: flex;
+  padding-top: 5rem;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+  background-image: radial-gradient(#212121 10%, transparent 10%),
+    radial-gradient(#212121 10%, transparent 10%);
+  background-color: #fafafa;
+  background-position: 0 0, 50px 50px;
+  background-size: 10px 10px;
+}
+.title{
+  text-align: center;
+  color: #04ca53;
+}
+.row {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.col-header {
+  width: 150px;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  /* border-radius: 20px; */
+  padding: 0.8rem 1rem;
+  color: #fff;
+}
+
+.item {
+  width: 150px;
+  height: 66px;
+  border: 1px solid #eee;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  /* border-radius: 20px; */
+  background: #f7f6f7;
+  padding: 0.8rem 1rem;
+  color: #828282;
+  text-align: center;
+  cursor: grab;
+  margin-bottom: 1rem;
+}
+
+.item:active {
+  cursor: grabbing;
+}
+
+.placeholder {
+  width: 150px;
+  height: 66px;
+}
+
+.start {
+  box-shadow: 10px 10px 15px 4px #ffe975;
+  background: #fafafa;
+  color: black;
+}
+
+.progress {
+  box-shadow: 10px 10px 15px 4px #209cff;
+  background: #fafafa;
+  color: black;
+}
+
+.done {
+  box-shadow: 10px 10px 15px 4px #84fab0;
+  background: #fafafa;
+  color: black;
+}
+
+.hold {
+  border: 1px solid #ff85e4;
+}
+
+.hide {
+  display: none;
+}
+
+.hovered {
+  border-top: 2px solid#84fab0;
+}
+
+.text {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.addItem {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: linear-gradient(90deg, #e5ff85 0%, #22fd3b 179.25%);
+  color: #fff;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
